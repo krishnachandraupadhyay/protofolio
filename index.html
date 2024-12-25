@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Krishna Protofolio</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.bundle.js"></script>
+    <style>
+        .nav{
+            background-color: #4B4376;
+        }
+        .nav-link{
+            color:white;
+            font-size: 20px;
+        }
+        .about{
+            background-color: #4B4376;
+            height: 580px;
+            display: flex;
+        }
+        .img1{
+            margin-top: 30px;
+            height:550px;
+            width: 450px;
+            border-right: 5px solid white;
+            border-bottom-right-radius: 10px;
+            border-top-right-radius: 230px;
+        }
+        .about-me{
+            text-align: center;
+            margin-left: 100px;
+            margin-top: 150px;
+        }
+        .about-me h1,h3{
+            color: white;
+        }
+        * {
+           box-sizing: border-box;
+             margin: 0;
+  padding: 0;
+}
+
+/* body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(135deg, #f6f8f9 0%, #e5ebee 100%);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+} */
+
+/* .text-container {
+  position: relative;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  box-shadow: 0 8px 32px rgba(31, 38, 135, 0.15);
+  transition: transform 0.3s ease;
+} */
+
+/* .text-container:hover {
+  transform: translateY(-5px);
+} */
+
+h1 {
+  color: #2077ce;
+  font-size: 3rem;
+  font-weight: 300;
+  line-height: 1.5;
+  text-transform: uppercase;
+  white-space: nowrap;
+  overflow: hidden;
+  position: relative;
+  width: 650px;
+  height: 4.5rem;
+}
+
+/* h1 span.prefix {
+  font-size: 55px;
+  margin-left: -200px;
+  position: relative;
+  cursor: pointer;
+  transition: color 0.3s ease;
+} */
+
+/* h1 span.prefix:hover {
+  color: #7c5ce0;
+} */
+
+.message {
+  /* background: linear-gradient(45deg, #a8d8ea, #aa96da); */
+  color:white;
+  display: block;
+  font-weight: 150;
+  overflow: hidden;
+  position: absolute;
+  padding: 0.2rem 1rem;
+  top: 0.2rem;
+  left: 100px;
+  border-radius: 4px;
+  animation: openclose 8s ease-in-out infinite;
+  height: 4.5rem;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.message:hover {
+  transform: scale(1.02);
+  /* box-shadow: 0 5px 15px rgba(0,0,0,0.1); */
+}
+
+.word1, .word2, .word3, .word4 {
+  font-family: tahoma;
+  position: absolute;
+  width: 100%;
+  opacity: 0;
+  height: 4.5rem;
+}
+
+.message .word1 { animation: word-animation 8s infinite; }
+.message .word2 { animation: word-animation 8s infinite 2s; }
+.message .word3 { animation: word-animation 8s infinite 4s; }
+.message .word4 { animation: word-animation 8s infinite 6s; }
+
+@keyframes word-animation {
+  0%, 5% { opacity: 0; }
+  10%, 22% { opacity: 1; }
+  27%, 100% { opacity: 0; }
+}
+
+@keyframes openclose {
+  0% { top: 0.2rem; width: 0; }
+  5% { width: 0; }
+  10% { width: 600px; }
+  20% { top: 0.2rem; width: 600px; }
+  25% { top: 0.2rem; width: 0; }
+  30% { top: 0.2rem; width: 0; }
+  35% { top: 0.2rem; width: 600px; }
+  45% { top: 0.2rem; width: 600px; }
+  50% { top: 0.2rem; width: 0; }
+  55% { top: 0.2rem; width: 0; }
+  60% { top: 0.2rem; width: 600px; }
+  70% { top: 0.2rem; width: 600px; }
+  75% { top: 0.2rem; width: 0; }
+  80% { top: 0.2rem; width: 600px; }
+  90% { top: 0.2rem; width: 600px; }
+  95% { top: 0.2rem; width: 0; }
+  100% { top: 0.2rem; width: 0; }
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+    width: 400px;
+  }
+  
+  h1 span.prefix {
+    font-size: 1.4rem;
+    margin-left: 20px;
+  }
+  
+  .message {
+    left: 150px;
+  }
+}
+.about-us-data{
+    display: flex;
+   height:500px;
+}
+.data{
+    padding: 20px;
+    width:700px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.data p{
+  padding: 15px;
+  font-size: larger;
+}
+
+.gap{
+  width: 150px;
+}
+.about-us-data .image{
+    height: 500px;
+    width: 450px;
+    border-left:6px solid blue;
+    border-top-left-radius: 150px;
+    border-bottom-left-radius: 150px;
+}
+.education{
+    background-color: #cc79b2;
+    border-radius: 20px;
+    /* background: linear-gradient(orange,white,green); */
+    height: 550px;
+}
+.dot{
+    border: 2px solid white;
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    align-items: center;
+    margin-left: 20px;
+}
+.dot1{
+    border: 2px solid black;
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    align-items: center;
+    margin-left: 20px;
+}
+.dot .text{
+    margin: 25px;
+    color: white;
+    width: 500px;
+}
+.education .education-head{
+    color: white;
+}
+.education .line{
+    margin-left: 28px;
+    border-left: 2px solid white;
+    border-top-right-radius: 50px;
+    height:120px;
+    border-color: white;
+}
+.dot hr{
+    border: 5px solid white;
+    width: 50px;
+}
+.dot .dot-line{
+    margin-left: 50px;
+    border-left: 2px solid white;
+    border-top-right-radius: 50px;
+    height:50px;
+    width: 500px;
+    border-color: white;
+}
+.dot-line ul li{
+    list-style-type: disc;
+    color: white;
+}
+hr{
+    border: 5px solid red;
+}
+.skill-head{
+    color: black;
+}
+.hard-skill-head{
+    font-size: 30px;
+    text-align: center;
+}
+.hard-skill{
+  padding-left: 45px;
+}
+.soft-skill{
+  padding-left: 45px;
+}
+.myskill{
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.contact{
+  background-color: #cc79b2;
+  height:550px;
+  border-radius: 10px;
+  border-bottom: #2077ce;
+}
+.contact-img{
+  border-radius: 10px;
+}
+.footer{
+  height:30px;
+ background-color: #4B4376;
+  border-radius: 5px;
+}
+.footer-heading{
+  color: white;
+  text-align: center;
+}
+label{
+  color:white;
+}
+    </style>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+  const message = document.querySelector('.message');
+
+  // Add click interaction to words
+  const words = document.querySelectorAll('.word1, .word2, .word3, .word4');
+  words.forEach(word => {
+    word.addEventListener('click', () => {
+      word.style.transform = 'scale(1.1)';
+      setTimeout(() => {
+        word.style.transform = 'scale(1)';
+      }, 200);
+    });
+  });
+
+  // Easter egg: Double click to add sparkle effect
+  message.addEventListener('dblclick', () => {
+    createSparkle(message);
+  });
+
+  function createSparkle(element) {
+    const sparkle = document.createElement('span');
+    sparkle.textContent = '✨';
+    sparkle.style.position = 'absolute';
+    sparkle.style.left = Math.random() * 100 + '%';
+    sparkle.style.top = Math.random() * 100 + '%';
+    sparkle.style.animation = 'sparkle 1s forwards';
+    element.appendChild(sparkle);
+
+    setTimeout(() => {
+      sparkle.remove();
+    }, 1000);
+  }
+});
+    </script>
+</head>
+<body>
+    <div class="container-fluid">
+    <ul class="nav justify-content-center ">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#about">About Us</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#education">Education</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#myskill">Skill</a>
+          </li>
+        <li class="nav-item">
+          <a class="nav-link" href="image/kcresum (1).pdf">Resume</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="#contact">Contact</a>
+        </li>
+      </ul>
+    </div>
+      <div class="container-fluid">
+        <div class="about">
+            <div class="img">
+            <img src="image/krishna4.jpg" alt="" srcset="" class="img1">
+           </div>
+            <div class="about-me">
+                   <h1>Krishna Chandra Upadhyay</h1>
+                   <h3></h3>
+                   <div class="text-container">
+                    <h1>
+                      <!-- <span class="prefix">you are</span> -->
+                      <div class="message">
+                        <div class="word1">Web Developer </div>
+                        <div class="word2">Data Analyst</div>
+                        <div class="word3">Python Developer</div>
+                        <div class="word4">Php Developer</div>
+                      </div>
+                    </h1>
+                  </div>
+            </div>
+        </div>
+      </div>
+      <div class="container-fluid" id="about">
+        <h2 align="center"><b>About Us</b></h2>
+           <div class="about-us-data" >
+            
+              <div class="data">
+                
+                <p align="justify"> 
+                  <b>Name :</b> Krishna Chandra Upadhyay  <br>
+                  <b>Father's Name :</b> Mister Kamlesh Upadhyay <br>
+                  <b>Date of Birth :</b> 11/03/2004 <br>
+                  <b>Nationality :</b> Indian <br>
+                  <b>Designation :</b> Web designer <br>
+                  <b> Gender :</b> Male <br>
+                  <b> Email : </b>  kcupadhyay11chs@gmail.com <br>
+                  <b> Mobile :</b>   +919519992342 <br>
+                  <p align="justify"><b>Objective :- </b>Computer Science and Engineering student. I consider myself a responsible and orderly
+                    person. I am looking forward to my first work experience.
+                    </p>
+                </p>
+              </div>
+              <div class="gap"></div>
+              <div class="image">
+                       <img src="image/krishna3.jpg" alt="" height="500px" width="400px" style="border-top-left-radius: 150px;border-bottom-left-radius: 150px;">
+              </div>
+           </div>
+      </div><br>
+      <div class="container-fluid" id="education">
+            <div class="education" ><br>
+                <h2 align="center" class="education-head">Education Details</h2><br>
+                <div class="education-detail">
+                        <div class="dot">
+                                 <span class="text">Matriculation</span>
+                                 
+                                 <div class="dot-line"> 
+                                    <ul class="list">
+                                    <li><b>Name: </b> Beena Public School</li>
+                                    <li><b>Percentage : </b> 73%</li>
+                                 </ul>
+                                </div>
+                        </div>
+                        <div class="line"></div>
+                        <div class="dot">
+                            <span class="text">Intermediate</span>
+                            
+                            <div class="dot-line"> 
+                               <ul class="list">
+                               <li><b>Name: </b> Happy Home English School</li>
+                               <li><b>Percentage : </b> 64%</li>
+                            </ul>
+                           </div>
+                   </div>
+                   <div class="line"></div>
+                   <div class="dot">
+                    <span class="text">Diploma</span>
+                    <div class="dot-line"> 
+                       <ul class="list">
+                         <li><b>Branch : </b> Computer Science and Engineering</li>
+                         <li><b>Name : </b> Government Polytechnic Autraulia Azamgarh</li>
+                         <li><b>Percentage : </b> 77%</li>
+                       </ul>
+                   </div>
+                   </div>
+                   <div class="line"></div>
+                   <div class="dot"></div>
+                </div>
+            </div>
+      </div><br><br>
+      <div class="container-fluid" id="myskill">
+        <h2 align="center">My Skill</h2>
+        <div class="row">
+          <div class="col-sm-6 hard-skill">
+            <h3  align="center" style="color:black;" class="hard-skill-head">Hard Skill</h3>
+             <div class="myskill">HTML</div>
+             <div class="progress" role="progressbar" aria-label="Warning example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+              <div class="progress-bar bg-warning text-dark" style="width: 85%">85%</div>
+            </div>
+             <div class="myskill">PHP</div>
+             <div class="progress" role="progressbar" aria-label="Warning example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+              <div class="progress-bar bg-warning text-dark" style="width: 75%">75%</div>
+            </div>
+             <div class="myskill">CSS</div>
+             <div class="progress" role="progressbar" aria-label="Warning example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+              <div class="progress-bar bg-warning text-dark" style="width: 75%">75%</div>
+            </div>
+             <div class="myskill">JAVASCRIPT</div>
+             <div class="progress" role="progressbar" aria-label="Warning example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+              <div class="progress-bar bg-warning text-dark" style="width: 65%">65%</div>
+            </div>
+             <div class="myskill">BOOTSTRAP</div>
+             <div class="progress" role="progressbar" aria-label="Warning example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+              <div class="progress-bar bg-warning text-dark" style="width: 90%">90%</div>
+            </div>
+             <div class="myskill">JAVA</div>
+             <div class="progress" role="progressbar" aria-label="Warning example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+              <div class="progress-bar bg-warning text-dark" style="width: 55%">55%</div>
+            </div>
+             <div class="myskill">POWER BI</div>
+             <div class="progress" role="progressbar" aria-label="Warning example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+              <div class="progress-bar bg-warning text-dark" style="width: 75%">75%</div>
+            </div>
+          </div>
+          <div class="col-sm-6 soft-skill"> 
+            <h3 align="center" style="color: black;" class="hard-skill-head">Soft Skill</h3>
+            <div class="myskill"> Communication Skill </div>
+            <div class="progress" role="progressbar" aria-label="Warning example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+              <div class="progress-bar bg-warning text-dark" style="width: 75%">75%</div>
+            </div>
+            <div class="myskill"> Public Speaking </div>
+            <div class="progress" role="progressbar" aria-label="Warning example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+              <div class="progress-bar bg-warning text-dark" style="width: 75%">75%</div>
+            </div>
+            <div class="myskill"> Problem Solving </div>
+            <div class="progress" role="progressbar" aria-label="Warning example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+              <div class="progress-bar bg-warning text-dark" style="width: 75%">75%</div>
+            </div>
+            <div class="myskill"> Quick Learner   </div>
+            <div class="progress" role="progressbar" aria-label="Warning example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+              <div class="progress-bar bg-warning text-dark" style="width: 75%">75%</div>
+            </div>
+            <div class="myskill"> Leadership      </div>
+            <div class="progress" role="progressbar" aria-label="Warning example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+              <div class="progress-bar bg-warning text-dark" style="width: 75%">75%</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+      <div class="container-fluid contact " id="contact">
+        <h2 align="center" style="color:white;"> Contact Us</h2>
+        <div class="row">
+          <div class="col-sm-6">
+            <img src="image/krishna.jpg" alt=""height="500px" width="600px" class="contact-img">
+          </div>
+          <div class="col-sm-6">
+<form id="contact_form" name="contact_form" method="post">
+    <div class="mb-5 row">
+        <div class="col">
+            <label>First Name</label>
+            <input type="text" required maxlength="50" class="form-control" id="first_name" name="first_name">
+        </div>
+        <div class="col">
+            <label>Last Name</label>
+            <input type="text" required maxlength="50" class="form-control" id="last_name" name="last_name">
+        </div>
+    </div>
+    <div class="mb-5 row">
+        <div class="col">
+            <label for="email_addr">Email address</label>
+            <input type="email" required maxlength="50" class="form-control" id="email_addr" name="email"
+                placeholder="name@example.com">
+        </div>
+        <div class="col">
+            <label for="phone_input">Phone</label>
+            <input type="tel" required maxlength="50" class="form-control" id="phone_input" name="Phone"
+                placeholder="Phone">
+        </div>
+    </div>
+    <div class="mb-5">
+        <label for="message">Message</label>
+        <textarea class="form-control" id="message" name="message" rows="5"></textarea>
+    </div>
+    <input type="reset" value="Cancel" class="btn btn-primary px-4 btn-lg">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <button type="submit" class="btn btn-primary px-4 btn-lg">Post</button>
+</form>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+              <div class="footer-heading">@2024 | Designed By Krishna Chandra Upadhyay</div>
+      </div>
+</body>
+</html>
